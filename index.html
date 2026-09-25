@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERATHOTI SIREESHA | CSE Student Portfolio</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+        body{font-family:Arial,sans-serif;background:#0b1020;color:white;line-height:1.6}
+        header{position:sticky;top:0;z-index:1000;background:#11182d;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #283250}
+        .logo{font-size:24px;font-weight:bold;color:#7c8cff}
+        nav a{color:white;text-decoration:none;margin-left:25px;font-size:15px}
+        nav a:hover{color:#7c8cff}
+        .hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;background:linear-gradient(135deg,#0b1020,#151e3a)}
+        .hero-content{max-width:850px}
+        .hero h1{font-size:clamp(40px,7vw,72px);margin-bottom:15px}
+        .hero h1 span{color:#7c8cff}
+        .hero h2{color:#b9c1d9;font-size:25px;margin-bottom:20px}
+        .hero p{color:#aeb7d0;font-size:18px;max-width:650px;margin:auto}
+        .buttons{margin-top:30px}
+        .btn{display:inline-block;padding:13px 24px;margin:8px;border-radius:8px;text-decoration:none;font-weight:bold;transition:.3s}
+        .primary{background:#7c8cff;color:white}.secondary{border:1px solid #7c8cff;color:#7c8cff}
+        .btn:hover{transform:translateY(-3px);opacity:.9}
+        section{padding:90px 8%}.section-title{text-align:center;margin-bottom:45px}
+        .section-title h2{font-size:38px;margin-bottom:10px}.section-title p{color:#8f99b5}
+        .about{background:#10172b}.about-content{max-width:850px;margin:auto;text-align:center;color:#b9c1d9;font-size:17px}
+        .info-box{margin:35px auto 0;max-width:700px;display:grid;grid-template-columns:1fr 1fr;gap:15px}
+        .info{background:#171f38;padding:20px;border-radius:12px;border:1px solid #283250}.info strong{display:block;color:#7c8cff;margin-bottom:5px}
+        .skills-container,.projects-container{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+        .skill,.project{background:#11182d;padding:25px;border-radius:12px;text-align:center;border:1px solid #283250;transition:.3s}
+        .skill:hover,.project:hover{transform:translateY(-6px)}
+        .skill h3,.project h3{color:#7c8cff;margin-bottom:8px}.skill p,.project p{color:#b9c1d9}
+        .contact{background:#10172b;text-align:center}.contact p{color:#b9c1d9;margin:8px}
+        footer{text-align:center;padding:25px;background:#080c18;color:#7f89a5}
+        @media(max-width:750px){
+            header{padding:15px 5%;flex-direction:column;gap:12px}nav a{margin:0 7px}
+            section{padding:65px 5%}.info-box,.skills-container,.projects-container{grid-template-columns:1fr}
+            .hero h2{font-size:21px}.hero p{font-size:16px}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">SIREESHA</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Perathoti Sireesha</span></h1>
+        <h2>B.Tech 2nd Year • Computer Science Student</h2>
+        <p>I am a Computer Science student interested in programming, web development and building useful digital projects.</p>
+        <div class="buttons">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="section-title">
+        <h2>About Me</h2>
+        <p>A little about my academic journey</p>
+    </div>
+    <div class="about-content">
+        <p>I am a B.Tech 2nd-year Computer Science student. I am developing my programming and web development skills and continuously learning through academic projects, practice and certifications.</p>
+        <div class="info-box">
+            <div class="info"><strong>Name</strong>Perathoti Sireesha</div>
+            <div class="info"><strong>Course</strong>B.Tech – Computer Science</div>
+            <div class="info"><strong>Year</strong>2nd Year</div>
+            <div class="info"><strong>Interests</strong>Programming & Web Development</div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="section-title">
+        <h2>Skills</h2>
+        <p>Technologies I am learning and practicing</p>
+    </div>
+    <div class="skills-container">
+        <div class="skill"><h3>C</h3><p>Programming fundamentals and data structures.</p></div>
+        <div class="skill"><h3>Python</h3><p>Basic programming and problem solving.</p></div>
+        <div class="skill"><h3>Java</h3><p>Core Java and object-oriented programming.</p></div>
+        <div class="skill"><h3>HTML</h3><p>Creating structured web pages.</p></div>
+        <div class="skill"><h3>CSS</h3><p>Styling responsive web interfaces.</p></div>
+        <div class="skill"><h3>DSA</h3><p>Learning algorithms and data structures.</p></div>
+    </div>
+</section>
+
+<section id="projects" class="about">
+    <div class="section-title">
+        <h2>Projects</h2>
+        <p>My learning projects</p>
+    </div>
+    <div class="projects-container">
+        <div class="project"><h3>ReUse Hub</h3><p>A student community concept for buying, selling, exchanging and donating useful items.</p></div>
+        <div class="project"><h3>Personal Portfolio</h3><p>A responsive portfolio website created using HTML and CSS.</p></div>
+        <div class="project"><h3>DSA Practice</h3><p>Programming practice covering arrays, linked lists, sorting and other fundamentals.</p></div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="section-title">
+        <h2>Contact</h2>
+        <p>Let's connect</p>
+    </div>
+    <p>📧 Email: Add your email here</p>
+    <p>🔗 GitHub: Add your GitHub profile here</p>
+    <p>💼 LinkedIn: Add your LinkedIn profile here</p>
+</section>
+
+<footer>
+    <p>© 2026 Perathoti Sireesha | CSE Student Portfolio</p>
+</footer>
+
+</body>
+</html>
